@@ -37,6 +37,11 @@ new Vue({
             } else {
                 this.url=convert_link(this.prod, assoc_id);
             }
+        },
+        copy() {
+            var copyText = document.getElementById("urltext");
+            copyText.select();
+            document.execCommand("copy");
         }
     }
 });
